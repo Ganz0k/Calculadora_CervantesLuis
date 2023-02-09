@@ -33,15 +33,9 @@ class MainActivity : AppCompatActivity() {
         var operacion: String = ""
 
         btn0.setOnClickListener {
-            if (conOperacion) {
-                var cadena = campo2.text.toString()
-                cadena = cadena + "0"
-                campo2.setText(cadena)
-            } else {
-                var cadena = campo1.text.toString()
-                cadena = cadena + "0"
-                campo1.setText(cadena)
-            }
+            var cadena = campo2.text.toString()
+            cadena = cadena + "0"
+            campo2.setText(cadena)
         }
 
         btn1.setOnClickListener {
